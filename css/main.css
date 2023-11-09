@@ -1,0 +1,228 @@
+body{
+    /* Margin - margen del elemento */
+    margin: 0;
+    /* Padding - margen interno del elemento */
+    padding: 0;
+    /* fuentes del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXx */
+
+/* NAVEGACION */
+header{
+    width: 100%;
+    height: 60px;
+    background-color:none;
+}
+
+header nav{
+    /* justificaar a la derecha */
+    /* Nos habilita usar flex-end y flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    background-color: none;
+    height: 40px;
+    /* Eliminar las viñetas */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a{
+    /* Eliminar subrayado de texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    /*  margen a la izquierda que da aspecto de separacion */
+    margin-right: 20px;
+}
+
+/* Icono del menu */
+nav .nav-right-section .menu{
+    /* agregar iconos desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* que la imagen este contenidaa en el elemento mas grande */
+    background-size: contain;
+    width: 100%;
+    /* hace que no se repita el icono/imagenes */
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /* redondear los bordes */
+    border-radius: 100%;
+    width: 30px;
+    margin-left: 20px;
+}
+
+/* XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXx */
+
+main{
+    /* agrega espacio entre header y main */
+    margin-top: 80px;
+    text-align: center;
+}
+
+main .main-logo{
+    background-color: none;
+    width: 530px;
+    /* Centrar absolutamente gracias a los margenes automaticos */
+    /* Vertical // horizontal */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 94px;
+    margin-bottom: 20px;
+}
+
+main .main-input{
+    width: 530px;
+    /* Centrar absolutamente gracias a los margenes automaticos */
+    /* Vertical // horizontal */
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /* Ancho borde || borde-estilo || borde-color */
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    width: 100%;
+    background-color: none;
+}
+
+main .main-input-container:hover, main .main-input input:hover{ 
+    background-color: #f5f5f5;
+}
+
+main .main-input input{
+    background-color: none;
+    height: 45px;
+    /* Quitar el borde */
+    border: none;
+    /* Quita el borde cuando esta activo el input */
+    outline: none;
+    width: 400px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-color: none;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+main .main-input .cam-icon{
+    background-color: none;
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+main .botones .voy-tener-suerte, main .botones .buscar-c-google{
+    font-size: 15px;
+    margin-top: 30px;
+    border-radius: 0px;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-right: 40px;
+
+}
+
+main .botones .voy-tener-suerte:hover, main .botones .buscar-c-google:hover{
+    border-color: rgb(20, 20, 20);
+}
+
+/* XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXx */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 36vh;
+}
+
+footer .seccion-1 .nav-top-left{
+    border-bottom: 1px solid #e3e4e7;
+    background-color: #f5f5f5;
+    color: #70757a;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    height: 47px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+footer nav{
+    background-color: #f5f5f5;
+    margin-top: 0px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer nav .nav-left{
+    width: 700px;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+footer nav .nav-left a{
+    color: #70757a;
+    font-size: 14px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+footer nav .nav-right{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+footer nav .nav-right a{
+    color: #70757a;
+    font-size: 14px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+/* Al pasar el mouse, el link/palabra se subraya */
+a:hover {
+	COLOR: black;
+	TEXT-DECORATION:underline;
+}
+
+
+
